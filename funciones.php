@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Esqina Noreste</title>
+    <title>Costo Minimo</title>
     <style>
 
         body {
