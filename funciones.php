@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Descenso del Gradiente</title>
+    <title>Esqina Noreste</title>
     <style>
 
         body {
@@ -54,7 +54,7 @@
     </style>
 </head>
 <body>
-    <header>Descenso del Gradiente</header>
+    <header>Costo Minimo</header>
     <div class="result">
         <?php
         include 'transporte.php';
@@ -99,6 +99,6 @@
         }
         ?>
     </div>
-    <footer>© 2022 Mi Aplicación</footer>
+    <footer>© 2024 Mi Aplicación</footer>
 </body>
 </html>
