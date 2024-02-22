@@ -13,7 +13,7 @@ function costo_minimo_transporte($costos, $oferta, $demanda) {
         $minI = -1;
         $minJ = -1;
 
-        // Recorr todas las ofertas y demandas
+        // Recorre todas las ofertas y demandas
         for ($i = 0; $i < count($oferta); $i++) {
             for ($j = 0; $j < count($demanda); $j++) {
                 // Si hay oferta y demanda restante y el costo es menor que el mínimo actual
@@ -39,7 +39,7 @@ function costo_minimo_transporte($costos, $oferta, $demanda) {
     // Recorre todas las ofertas y demandas
     for ($i = 0; $i < count($oferta); $i++) {
         for ($j = 0; $j < count($demanda); $j++) {
-            // Multiplicar la cantidad transportada por el costo y guardar el resultado
+            // Multiplica la cantidad transportada por el costo y guardar el resultado
             $resMultiplicado[$i][$j] = $res[$i][$j] * $costos[$i][$j];
         }
     }

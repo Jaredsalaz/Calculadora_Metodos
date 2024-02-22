@@ -2,79 +2,13 @@
 <html>
 <head>
     <title>Costo Minimo</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: #f2f2f2;
-            color: #333;
-        }
-        header {
-            background: #333;
-            color: #f2f2f2;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        footer {
-            background: #333;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        form {
-            background: #fff;
-            margin: 50px auto;
-            width: 300px;
-            padding: 2em;
-            border: 1px solid #CCC;
-            border-radius: 2em;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        form div + div {
-            margin-top: 1em;
-        }
-        label {
-            display: inline-block;
-            width: 90px;
-            text-align: right;
-        }
-        input, textarea {
-            font: 1em sans-serif;
-            width: 200px;
-            box-sizing: border-box;
-            border: 1px solid #999;
-            border-radius: 2em;
-            padding: 0.5em;
-        }
-        .button {
-            padding-left: 90px;
-        }
-        button {
-            margin-left: .5em;
-        }
-        table {
-            margin-top: 1em;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        td {
-            padding: 0.5em;
-            border: 1px solid #ccc;
-            text-align: center;
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-            font-size: 1.2em;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <header>Costo Minimo</header>
+    <header>
+        Costo Minimo
+
+    </header>
 
     <script>
     function actualizarMatriz() {
@@ -119,7 +53,7 @@
     }
     </script>
 
-    <form id="matrixForm" action="funciones.php" method="post">
+    <form id="matrixForm" action="funciones_minimo.php" method="post">
         <label for="filas">Número de filas:</label>
         <input type="number" id="filas" name="filas" oninput="actualizarMatriz()">
 
@@ -138,5 +72,12 @@
         <input type="submit" value="Calcular">
     </form>
     <footer>© 2024 Jared Daniel Salazar Sanchez</footer>
+    <div id="navbar">
+        <img src="imagenes/barra-de-navegacion.png" class="nav-item" onclick="toggleDropdown()">
+        <div id="dropdown" class="dropdown-content">
+            <a href="index2.php">Metodo de Esquina Noreste</a>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
 </body>
 </html>
